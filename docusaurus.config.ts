@@ -11,8 +11,8 @@ const config: Config = {
     v4: true,
   },
 
-  url: 'https://ciyexhub.com',
-  baseUrl: '/',
+  url: 'https://qiaben.github.io',
+  baseUrl: '/ciyex-hub-web/',
 
   organizationName: 'qiaben',
   projectName: 'ciyex-hub-web',
