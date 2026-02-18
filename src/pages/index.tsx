@@ -17,15 +17,16 @@ function HomepageHeader() {
           <div className={styles.heroContent}>
             <div className={styles.badges}>
               <span className={styles.badge}>App Marketplace</span>
-              <span className={styles.badgeApps}>10+ Apps</span>
+              <span className={styles.badgeNonprofit}>501(c)(3) Nonprofit</span>
               <span className={styles.badgeFhir}>FHIR R4</span>
+              <span className={styles.badgeHl7}>HL7 v2</span>
             </div>
             <Heading as="h1" className="hero__title">
               {siteConfig.title}
             </Heading>
             <p className="hero__subtitle">{siteConfig.tagline}</p>
             <p className={styles.heroDescription}>
-              Discover, install, and manage healthcare apps that seamlessly integrate
+              A 501(c)(3) nonprofit empowering Public Health initiatives globally. Discover, install, and manage healthcare apps that seamlessly integrate
               with <strong>Ciyex EHR</strong>. From billing and telehealth to AI-powered
               clinical tools — find everything your practice needs in one place.
             </p>
@@ -48,42 +49,14 @@ function HomepageHeader() {
   );
 }
 
-function StatsSection() {
-  return (
-    <section className="statsSection">
-      <div className="container">
-        <div className="statsGrid">
-          <div className="statItem">
-            <div className="statNumber">10+</div>
-            <div className="statLabel">Available Apps</div>
-          </div>
-          <div className="statItem">
-            <div className="statNumber">10</div>
-            <div className="statLabel">Categories</div>
-          </div>
-          <div className="statItem">
-            <div className="statNumber">FHIR</div>
-            <div className="statLabel">R4 Compliant</div>
-          </div>
-          <div className="statItem">
-            <div className="statNumber">HIPAA</div>
-            <div className="statLabel">Certified</div>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
 export default function Home(): ReactNode {
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
       title="Healthcare App Marketplace"
-      description="Ciyex Hub - The App Marketplace for Healthcare. Browse, install, and manage apps that extend your Ciyex EHR with powerful integrations.">
+      description="Ciyex Hub - A 501(c)(3) nonprofit building the App Marketplace for Healthcare. Browse, install, and manage apps that extend your Ciyex EHR with powerful integrations.">
       <HomepageHeader />
       <main>
-        <StatsSection />
         <HomepageFeatures />
       </main>
     </Layout>
