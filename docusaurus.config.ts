@@ -11,8 +11,8 @@ const config: Config = {
     v4: true,
   },
 
-  url: 'https://qiaben.github.io',
-  baseUrl: '/ciyex-hub-web/',
+  url: 'https://ciyexhub.com',
+  baseUrl: '/',
 
   organizationName: 'qiaben',
   projectName: 'ciyex-hub-web',
@@ -57,7 +57,7 @@ const config: Config = {
     },
     announcementBar: {
       id: 'hub_launch',
-      content: '🚀 Ciyex Hub is now live! Browse and install apps to extend your EHR. <a target="_blank" rel="noopener noreferrer" href="/apps">Explore Apps</a>',
+      content: '🚀 Ciyex Hub is now live! Browse and install apps to extend your EHR. <a href="/apps">Explore Apps</a>',
       backgroundColor: '#6b5ce7',
       textColor: '#ffffff',
       isCloseable: true,
